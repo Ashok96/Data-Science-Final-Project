@@ -14,7 +14,7 @@ def main():
         if not os.path.isfile(raw_data_set_filename):
             print("File [ " + raw_data_set_filename + "] not present. Fetching via http ...")
             source = "http://quickstats.nass.usda.gov/api/api_GET/?key="+ api_key +"&year__GE=1989&year__LE=2018&program=SURVEY&sector=\'ANIMALS & PRODUCTS\'&group=POULTRY&commodity_desc=TURKEYS&category=SLAUGHTERED&data_item__LIKE='F1 - SLAUGHTERED, MEASURED IN HEAD'&format=csv&state_alpha=VA"
-            does_file_exist = FALSE
+            does_file_exist = False
         else:
             print("File [" + raw_data_set_filename + "] exist. Fetching locally ...")
             source = raw_data_set_filename
@@ -23,8 +23,8 @@ def main():
             if not does_file_exist:
                 data.to_csv(raw_data_set_filename, index=FALSE)
 
-            except Exception as e:
+    except Exception as e:
                 print("Error" + str(e))
 
- if __name__ == "__main__":
+if __name__ == "__main__":
     main()
