@@ -1,5 +1,7 @@
-Kymberlee Hill
-Swarnim Bhandari
+"""
+Filename: README.md
+Authors: Kymberlee Hill, Swarnim Bhandari
+"""
 
 CSCI 473 Applied Data Science
 Instructor: Gedare Bloom
