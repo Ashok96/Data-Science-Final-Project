@@ -3,6 +3,7 @@ Filename: extract.py
 Authors: Kymberlee Hill , Swarnim Bhandari
 """
 import os
+import requests
 import pandas as pd
 
 api_key = "0D98036D-C6D4-390F-A3E4-C7169A050F15"

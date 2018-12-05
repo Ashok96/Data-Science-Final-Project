@@ -1,6 +1,7 @@
 """
 Filename: extract.py
 Authors: Kymberlee Hill , Swarnim Bhandari
+Purpose: to obtain data from USDA api endpoint and put it into a file
 """
 import requests
 import json
